@@ -37,24 +37,24 @@ body {
     margin-left: 405px;
 }
 
-.about {
+#about {
     text-decoration: none;
     color: black;
 }
 
-.contact {
+#contact {
     margin-left: 20px;
     text-decoration: none;
     color: black;
 }
 
-.projects {
+#projects {
     margin-left: 20px;
     text-decoration: none;
     color: black;
 }
 
-.hobbies {
+#hobbies {
     margin-left: 20px;
     text-decoration: none;
     color: black;
