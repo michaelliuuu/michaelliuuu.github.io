@@ -1,3 +1,4 @@
+//links switch the pages
 const contactLink = document.getElementById("contact");
 const contactSection = document.getElementById("contactSection");
 const aboutLink = document.getElementById("about");
@@ -42,4 +43,10 @@ hobbiesLink.addEventListener("click", function(event) {
     contactSection.style.display = "none";
     aboutSection.style.display = "none";
     projectSection.style.display = "none";
+});
+
+//Submit button sends info to me
+const submitButton = document.getElementById('submitButton');
+submitButton.addEventListener('click', () => {
+    
 });

@@ -28,7 +28,7 @@
                 </a>
             </div>
         </div>
-        <section id="aboutSection">
+        <section id="aboutSection" style="display: none;">
             <div class="aboutContainer">
                 <div class="textContainer">
                     <div class="introduction">
@@ -47,8 +47,11 @@
                 </div>
             </div>
         </section>
-        <section id="contactSection" style="display: none;">
+        <section id="contactSection">
             <div class="contactContainer">
+                <div class="contactTitleContainer">
+                    <p class="contactTitle">Contact Me</p>
+                </div>
                 <div class="myInfoImg">
                     <i class="fas fa-envelope"></i> 
                     <i class="fas fa-phone"></i>
@@ -56,26 +59,34 @@
                 <div class="myInfo">
                     <!-- Make it so it copies when clicked -->
                     <p class="phoneNum">+1 (778)-927-5568</p>
-                    <p class="email">michaelliu.98@hotmail.com</p>
+                    <p class="myemail">michaelliu.98@hotmail.com</p>
                 </div>
                 <div class="contactTextContainer">
                     <div class="contactLeft">
-                        <p>Contact Form</p>
-                        <p>Your Name</p>
-                        <p>Email</p>
-                        <p>Phone</p>
+                        <p class="name">Your Name</p>
+                        <input type="text" class="nameText" name="nameText" style="display: block;">
+                        <p class="email">Email</p>
+                        <input type="text" class="emailText" name="emailText" style="display: block;">
+                        <p class="phone">Phone</p>
+                        <input type="text" class="phoneText" name="phoneText" style="display: block;">
                     </div>
                     <div class="contactRight">
-                        <p>Message</p>
+                        <p class="message">Message</p>
+                        <input type="text" class="messageText" name="messageText" style="display: block;">
+                        <button type="submit" class="submitButton">Submit</button>
                     </div>
                 </div>
             </div>
         </section>
         <section id="hobbiesSection" style="display: none;">
+            <div class="hobbiesContainer">
 
+            </div>
         </section>
         <section id="projectSection" style="display: none;">
-            
+            <div class="projectContainer">
+                
+            </div>
         </section>
         <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
         <script src="index.js"></script>

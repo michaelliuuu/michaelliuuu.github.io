@@ -122,6 +122,17 @@ body {
     background-color: #eed9c4;
 }
 
+.contactTitleContainer {
+    justify-content: center;
+    display: flex;
+}
+
+.contactTitle {
+    font-size: 40px;
+    font-style: italic;
+    margin-top: 30px;
+}
+
 .myInfoImg {
     display: flex;
     justify-content: center;
@@ -129,26 +140,29 @@ body {
 }
 
 .fa-envelope {
-    margin-top: 90px;
+    margin-top: 60px;
     margin-left: -20px;
+
 }
 
 .fa-phone {
-    margin-top: 90px;
+    margin-top: 60px;
     margin-left: 200px;
+
 }
 
 .myInfo {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .phoneNum {
     margin-top: 10px;
 }
 
-.email {
+.myemail {
     margin-left: 70px;
     margin-top: 10px;
 }
@@ -165,11 +179,50 @@ body {
 }
 
 .contactLeft {
-    border: 2px solid black;
+    width: 250px;
+}
+
+.name, .email, .phone, .message {
+    margin-left: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+
+.nameText, .emailText, .phoneText {
+    border: 2px solid gray;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .contactRight {
-    border: 2px solid black;
-
+    width: 250px;
 }
 
+.messageText {
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 240px;
+    width: 225px;
+}
+
+.submitButton {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.hobbiesContainer {
+    background-color: #eed9c4;
+}
+
+.projectContainer {
+    background-color: #eed9c4;
+}
