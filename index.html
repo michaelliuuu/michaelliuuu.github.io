@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Michael's CS Portfolio</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -28,26 +28,25 @@
                 </a>
             </div>
         </div>
-        <section id="aboutSection" style="display: none;">
+        <section id="aboutSection">
             <div class="aboutContainer">
                 <div class="textContainer">
                     <div class="introduction">
-                        <p class="aboutMe">Howdy! I am a 2nd year Computer Science student at Langara, transferring to UBC in the fall.</p>
+                        <p class="aboutMe">Howdy! I am a 2nd year Computer Science student at the University of British Columbia.</p>
                     </div>
                     <div class="introExtra">
-                        <p class="text1">I transitioned as an Electrician to pursue my passion in programming. I love developing personal projects that automate tasks and simplify my daily routine.
-                            I am currently looking for a internship as a Software Engineer.</p>
+                        <p class="text1">I changed my career as an Electrician to pursue my passion in programming. I love developing personal projects that automate tasks and simplify my daily routine.
+                            I am currently looking for a internship as a Software Engineer Intern.</p>
                         <p class="text2">When I'm not working or studying, you can find me outdoors being active. I'm a big fan of exercising and playing various sports, as well as hiking and biking. 
-                            I also have a passion for photography, and I'm currently learning to play guitar as another hobby.</p>
+                            I also have a passion for photography, and I'm currently learning to play guitar.</p>
                     </div>
                 </div>
                 <div class="imageContainer">
                     <img class="profilepic" src="images/pp.png" alt="profile picture">
-                    <!-- <p class="profilepicText">Meet my cat, Mao!</p> -->
                 </div>
             </div>
         </section>
-        <section id="contactSection">
+        <section id="contactSection" style="display: none;">
             <div class="contactContainer">
                 <div class="contactTitleContainer">
                     <p class="contactTitle">Contact Me</p>
@@ -57,38 +56,56 @@
                     <i class="fas fa-phone"></i>
                 </div>
                 <div class="myInfo">
-                    <!-- Make it so it copies when clicked -->
-                    <p class="phoneNum">+1 (778)-927-5568</p>
-                    <p class="myemail">michaelliu.98@hotmail.com</p>
+                    <a href="#" id="phoneNum">+1(778)-927-5568</a>
+                    <a href="#" id="myemail">michaelliu.98@hotmail.com</a>
                 </div>
                 <div class="contactTextContainer">
-                    <div class="contactLeft">
-                        <p class="name">Your Name</p>
-                        <input type="text" class="nameText" name="nameText" style="display: block;">
-                        <p class="email">Email</p>
-                        <input type="text" class="emailText" name="emailText" style="display: block;">
-                        <p class="phone">Phone</p>
-                        <input type="text" class="phoneText" name="phoneText" style="display: block;">
-                    </div>
-                    <div class="contactRight">
-                        <p class="message">Message</p>
-                        <input type="text" class="messageText" name="messageText" style="display: block;">
-                        <button type="submit" class="submitButton">Submit</button>
-                    </div>
+                    <form method="post" action="contact.php" id="contact-form">
+                        <!-- <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?> -->
+                        <div class="contactLeft">
+                            <p class="name">Your Name</p>
+                            <input type="text" class="nameText" name="name" style="display: block;" maxlength="30">
+                            <p class="email">Email</p>
+                            <input type="text" class="emailText" name="email" style="display: block;" maxlength="30">
+                            <p class="phone">Phone</p>
+                            <input type="text" class="phoneText" name="phone" style="display: block;" maxlength="20">
+                        </div>
+                        <div class="contactRight">
+                            <p class="message">Message</p>
+                            <textarea name="text" id="messageText" cols="30" rows="10"></textarea>
+                            <input type="submit" class="submitButton" value="Send"></button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
         <section id="hobbiesSection" style="display: none;">
             <div class="hobbiesContainer">
-
+                <div class="hobbyImg1Container">
+                    <img class="hobbyImg" src="images/hobbyImg1.jpg" alt="working out">
+                    <img class="hobbyImg" src="images/hobbyImg2.jpg" alt="hiking">
+                </div>
+                <div class="hobbyText1">
+                    <!-- <p class="hobbyImgText1">I workout occasionally.</p>
+                    <p class="hobbyImgText2">Not often I get to hike, but I do it for the views.</p> -->
+                </div>
+                <div class="hobbyImg2Container">
+                    <img class="hobbyImg" src="images/hobbyImg3.png" alt="photography">
+                    <img class="hobbyImg" src="images/hobbyImg4.jpg" alt="resting">
+                </div>
+                <div class="hobbyText2">
+                    <!-- <p class="hobbyImgText3">I love going to new places to take pictures.</p>
+                    <p class="hobbyImgText4">If I'm not out, I enjoy staing in and watching my shows.</p> -->
+                </div>
             </div>
         </section>
         <section id="projectSection" style="display: none;">
             <div class="projectContainer">
-                
+                <p>WIP</p>
             </div>
         </section>
         <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

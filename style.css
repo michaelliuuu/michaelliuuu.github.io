@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: 80px;
+    display: flex;
+    white-space: nowrap;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.titleContainer {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.title {
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.optionsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 405px;
+}
+
+#about {
+    text-decoration: none;
+    color: black;
+}
+
+#contact, #projects, #hobbies {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.linkContainer {
+    margin-top: 25px;
+    margin-left: 450px;
+}
+
+.github {
+    margin-left: 20px;
+}
+
+.aboutContainer {
+    display: flex;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.textContainer {
+    width: 50%;
+    font-family: 'Times New Roman', serif;
+}
+
+.introduction {
+    font-size: 40px;
+    margin: 0 auto;
+    max-width: 500px;
+    margin-top: 80px;
+    font-style: italic;
+}
+
+.introExtra {
+    font-size: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.text2 {
+    margin-top: 10px;
+}
+
+/* image goes over containers when minimized */
+.imageContainer {
+    background-color: #eed9c4;
+    width: 50%;
+    height: 89.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilepic {
+    height: 500px;
+    border-radius: 30%;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.contactContainer {
+    height: 90vh;
+    width: 100%;
+    background-color: #eed9c4;
+}
+
+.contactTitleContainer {
+    justify-content: center;
+    display: flex;
+}
+
+.contactTitle {
+    font-size: 40px;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+.myInfoImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-envelope {
+    margin-top: 50px;
+    margin-left: -20px;
+
+}
+
+.fa-phone {
+    margin-top: 50px;
+    margin-left: 200px;
+
+}
+
+.myInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#phoneNum {
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#myemail {
+    margin-left: 70px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.contactTextContainer {
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.contactLeft {
+    width: 250px;
+}
+
+.name, .email, .phone, .message {
+    margin-left: 20px;
+    margin-top: 45px;
+    font-weight: bold;
+}
+
+
+.nameText, .emailText, .phoneText {
+    border: 2px solid gray;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.contactRight {
+    width: 250px;
+}
+
+
+#messageText {
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 265px;
+    width: 225px;
+}
+
+.submitButton {
+    margin-top: 20px;
+    margin-left: 105px;
+    border-radius: 18px;
+}
+
+.popup {
+    visibility: hidden;  /* Hide popup by default */
+    min-width: 150px;    /* Set a minimum width */
+    background-color: #333; /* Dark background */
+    color: #fff;         /* White text color */
+    text-align: center;
+    border-radius: 6px;  /* Rounded corners */
+    padding: 8px 0;      /* Padding */
+    position: fixed;     /* Fixed positioning */
+    z-index: 1;          /* Sit on top of other content */
+    left: 50%;           /* Center the popup horizontally */
+    bottom: 20px;        /* Position at the bottom */
+    transform: translateX(-50%); /* Center align the popup */
+    opacity: 0;          /* Start fully transparent */
+    transition: opacity 0.5s, visibility 0.5s; /* Transition for fading in/out */
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.hobbiesContainer {
+    background-color: #eed9c4;
+    height: 90vh;
+    width: 100%;
+}
+
+.hobbyImg1Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hobbyImg2Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.hobbyText1 {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.hobbyText2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.hobbyImg{
+    height: 280px;
+    border-radius: 20px;
+    margin: 10px 75px;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.projectContainer {
+    background-color: #eed9c4;
+    height: 90vh;
+    width: 100%;
+}
