@@ -60,8 +60,8 @@
                     <a href="#" id="myemail">michaelliu.98@hotmail.com</a>
                 </div>
                 <div class="contactTextContainer">
-                    <form method="post" action="contact.php" id="contact-form">
-                        <!-- <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?> -->
+                    <form method="post" action="https://api.web3forms.com/submit">
+                        <input type="hidden" name="access_key" value="403115ff-fa17-470c-8527-47af5cc5a114">
                         <div class="contactLeft">
                             <p class="name">Your Name</p>
                             <input type="text" class="nameText" name="name" style="display: block;" maxlength="30">
@@ -78,6 +78,7 @@
                     </form>
                 </div>
             </div>
+            <div id="popup" class="popup">Copied to clipboard!</div>
         </section>
         <section id="hobbiesSection" style="display: none;">
             <div class="hobbiesContainer">
