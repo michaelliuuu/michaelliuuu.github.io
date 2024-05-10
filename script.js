@@ -86,4 +86,3 @@ copyMyEmail.addEventListener('click', function(event) {
     copyText(1);
 });
 
-//Submit button sends info to me

@@ -10,6 +10,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #eed9c4;
 }
 
 .container {
@@ -97,6 +98,10 @@ body {
     align-items: center;
 }
 
+.textContainer {
+    background-color: white;
+}
+
 .profilepic {
     height: 500px;
     border-radius: 30%;
@@ -153,7 +158,7 @@ body {
 }
 
 #myemail {
-    margin-left: 70px;
+    margin-left: 80px;
     margin-top: 10px;
     text-decoration: none;
     color: black;
@@ -170,18 +175,14 @@ body {
     justify-content: center;
 }
 
-.contactLeft {
-    width: 250px;
-}
-
-.name, .email, .phone, .message {
+.name, .email, .message {
     margin-left: 20px;
-    margin-top: 45px;
+    margin-top: 18px;
     font-weight: bold;
 }
 
 
-.nameText, .emailText, .phoneText {
+.nameText, .emailText {
     border: 2px solid gray;
     border-radius: 10px;
     height: 40px;
@@ -190,24 +191,20 @@ body {
     margin-left: 15px;
 }
 
-.contactRight {
-    width: 250px;
-}
-
 
 #messageText {
     border: 2px solid gray;
     border-radius: 10px;
     margin-top: 10px;
-    margin-left: 10px;
-    height: 265px;
-    width: 225px;
+    margin-left: 15px;
+    height: 125px;
+    width: 200px;
+    resize: none;
 }
 
 .submitButton {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 105px;
-    border-radius: 18px;
 }
 
 .popup {
@@ -230,46 +227,17 @@ body {
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .hobbiesContainer {
-    background-color: #eed9c4;
-    height: 90vh;
-    width: 100%;
-}
-
-.hobbyImg1Container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.hobbyImg2Container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.hobbyText1 {
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    width: 100%;
-    margin-top: 10px;
-}
-
-.hobbyText2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
+    text-align: center;
 }
 
 .hobbyImg{
     height: 280px;
     border-radius: 20px;
-    margin: 10px 75px;
+    margin-top: 20px;
+}
+
+.hobbyImgText {
+    margin-bottom: 20px;
 }
 
 
