@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #eed9c4;
+}
+
+/* nav bar */
+.container {
+    height: 80px;
+    display: flex;
+    white-space: nowrap;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.titleContainer {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.title {
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.optionsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 405px;
+}
+
+#about {
+    text-decoration: none;
+    color: black;
+}
+
+#contact, #projects, #hobbies {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.linkContainer {
+    margin-top: 25px;
+    margin-left: 450px;
+}
+
+.github {
+    margin-left: 20px;
+}
+
+.aboutContainer {
+    display: flex;
+}
+
+.textContainer {
+    width: 50%;
+    font-family: 'Times New Roman', serif;
+}
+
+/* index page */
+.introduction {
+    font-size: 40px;
+    margin: 0 auto;
+    max-width: 500px;
+    margin-top: 80px;
+    font-style: italic;
+}
+
+.introExtra {
+    font-size: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.text2 {
+    margin-top: 10px;
+}
