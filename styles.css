@@ -87,3 +87,21 @@ body {
 .text2 {
     margin-top: 10px;
 }
+
+.imageContainer {
+    background-color: #eed9c4;
+    width: 50%;
+    height: 89.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textContainer {
+    background-color: white;
+}
+
+.profilepic {
+    height: 500px;
+    border-radius: 30%;
+}
