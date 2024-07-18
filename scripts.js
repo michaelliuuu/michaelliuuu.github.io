@@ -1,9 +1,5 @@
-async function loadHTML(elementId, url) {
-    const response = await fetch(url);
-    const text = await response.text();
-    document.getElementById(elementId).innerHTML = text;
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    loadHTML('header', 'header.html');
-});
+fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header').innerHTML = data;
+    });
