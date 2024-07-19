@@ -36,7 +36,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    margin-left: 405px;
+    margin-left: 420px;
 }
 
 #about {
@@ -52,7 +52,7 @@ body {
 
 .linkContainer {
     margin-top: 25px;
-    margin-left: 450px;
+    margin-left: 480px;
 }
 
 .github {
@@ -105,3 +105,68 @@ body {
     height: 500px;
     border-radius: 30%;
 }
+
+.projectContainer {
+    text-align: center;
+}
+
+/* project page */
+.projectImg {
+    height: 280px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.project_container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.project_container .split {
+    width: 50%;
+    padding-top: 20px;
+}
+
+.project_container .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_container .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_container .centered {
+    text-align: center;
+}
+
+.project_container img {
+    height: 280px;
+    margin-bottom: 35px;
+}
+
+#opposite {
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .project_container {
+        flex-direction: column;
+    }
+    
+    .project_container .split {
+        width: 100%;
+    }
+}
+
