@@ -81,7 +81,7 @@ body {
     font-size: 20px;
     max-width: 500px;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .text2 {
@@ -188,3 +188,24 @@ main {
     margin-top: 20px;
 }
 
+
+#qual_container ul {
+    list-style-position: inside;
+    padding-left: 20px;
+    text-align: left;
+}
+
+#qual_container li {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .resume_container {
+        flex-direction: column;
+    }
+    
+    .resume_container .split {
+        width: 100%;
+    }
+}
