@@ -1,3 +1,6 @@
+/* Add these styles to your existing CSS */
+
+/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -188,7 +191,6 @@ main {
     margin-top: 20px;
 }
 
-
 #qual_container ul {
     list-style-position: inside;
     padding-left: 20px;
@@ -198,6 +200,14 @@ main {
 #qual_container li {
     text-align: left;
     margin-bottom: 10px;
+}
+
+.top-aligned {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    margin-top: 30px;
 }
 
 @media (max-width: 768px) {
