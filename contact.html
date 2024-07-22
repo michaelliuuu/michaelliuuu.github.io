@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header"></div>
+    
+    <main>
+        <div class="contactContainer">
+            <div class="contactTitleContainer">
+                <p class="contactTitle">Contact Me</p>
+            </div>
+            <div class="myInfoImg">
+                <i class="fas fa-envelope"></i> 
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="myInfo">
+                <a href="#" id="phoneNum">+1(778)-927-5568</a>
+                <a href="#" id="myemail">michaelliu.98@hotmail.com</a>
+            </div>
+            <div class="contactTextContainer">
+                <form method="post" action="https://api.web3forms.com/submit">
+                    <input type="hidden" name="access_key" value="403115ff-fa17-470c-8527-47af5cc5a114">
+                    <p class="name">Your Name</p>
+                    <input type="text" class="nameText" name="name" style="display: block;" maxlength="30">
+                    <p class="email">Email</p>
+                    <input type="text" class="emailText" name="email" style="display: block;" maxlength="30">
+                    <p class="email">Message</p>
+                    <textarea name="text" id="messageText" cols="30" rows="10"></textarea><br>
+                    <input type="submit" class="submitButton" value="Send"></button>
+                </form>
+            </div>
+        </div>
+        <div id="popup" class="popup">Copied to clipboard!</div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

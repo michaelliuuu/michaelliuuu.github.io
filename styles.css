@@ -44,7 +44,7 @@ body {
     color: black;
 }
 
-#contact, #projects, #hobbies {
+#contact, #projects, #qualifications {
     margin-left: 20px;
     text-decoration: none;
     color: black;
@@ -52,7 +52,7 @@ body {
 
 .linkContainer {
     margin-top: 25px;
-    margin-left: 480px;
+    margin-left: 445px;
 }
 
 .github {
@@ -73,7 +73,7 @@ body {
     font-size: 40px;
     margin: 0 auto;
     max-width: 500px;
-    margin-top: 80px;
+    margin-top: 40px;
     font-style: italic;
 }
 
@@ -168,5 +168,23 @@ main {
     .project_container .split {
         width: 100%;
     }
+}
+
+/* Resume page */
+.resume_container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#resume {
+    height: 800px;
+    border-radius: 20px;
+}
+
+#qual_container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
 }
 
