@@ -219,3 +219,119 @@ main {
         width: 100%;
     }
 }
+
+/* Contact Page */
+.contactContainer {
+    height: 90vh;
+    width: 100%;
+    background-color: #eed9c4;
+}
+
+.contactTitleContainer {
+    justify-content: center;
+    display: flex;
+}
+
+.contactTitle {
+    font-size: 40px;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+.myInfoImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-envelope {
+    margin-top: 50px;
+    margin-left: -20px;
+
+}
+
+.fa-phone {
+    margin-top: 50px;
+    margin-left: 200px;
+
+}
+
+.myInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#phoneNum {
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#myemail {
+    margin-left: 80px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.contactTextContainer {
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.name, .email, .message {
+    margin-left: 20px;
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+
+.nameText, .emailText {
+    border: 2px solid gray;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 13px;
+}
+
+
+#messageText {
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 13px;
+    height: 125px;
+    width: 200px;
+    resize: none;
+}
+
+.submitButton {
+    margin-top: 10px;
+    margin-left: 103px;
+}
+
+.popup {
+    visibility: hidden;  /* Hide popup by default */
+    min-width: 150px;    /* Set a minimum width */
+    background-color: #333; /* Dark background */
+    color: #fff;         /* White text color */
+    text-align: center;
+    border-radius: 6px;  /* Rounded corners */
+    padding: 8px 0;      /* Padding */
+    position: fixed;     /* Fixed positioning */
+    z-index: 1;          /* Sit on top of other content */
+    left: 50%;           /* Center the popup horizontally */
+    bottom: 20px;        /* Position at the bottom */
+    transform: translateX(-50%); /* Center align the popup */
+    opacity: 0;          /* Start fully transparent */
+    transition: opacity 0.5s, visibility 0.5s; /* Transition for fading in/out */
+}
