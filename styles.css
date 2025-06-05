@@ -1,6 +1,3 @@
-/* Add these styles to your existing CSS */
-
-/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,328 +7,312 @@
 }
 
 body {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: #eed9c4;
 }
 
-/* nav bar */
-.container {
-    height: 80px;
-    display: flex;
-    white-space: nowrap;
-    background-color: white;
-    border-bottom: 1px solid lightgray;
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
-.titleContainer {
-    margin-top: 30px;
-    margin-left: 30px;
-}
-
-.title {
-    font-family: 'Times New Roman', serif;
-    font-weight: bold;
-}
-
-.optionsContainer {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-left: 420px;
-}
-
-#about {
-    text-decoration: none;
-    color: black;
-}
-
-#contact, #projects, #qualifications {
-    margin-left: 20px;
-    text-decoration: none;
-    color: black;
-}
-
-.linkContainer {
-    margin-top: 25px;
-    margin-left: 445px;
-}
-
-.github {
-    margin-left: 20px;
-}
-
-.aboutContainer {
-    display: flex;
-}
-
-.textContainer {
-    width: 50%;
-    font-family: 'Times New Roman', serif;
-}
-
-/* index page */
-.introduction {
+h2 {
     font-size: 40px;
-    margin: 0 auto;
-    max-width: 500px;
-    margin-top: 40px;
     font-style: italic;
-}
-
-.introExtra {
-    font-size: 20px;
-    max-width: 500px;
-    margin: 0 auto;
-    margin-top: 60px;
-}
-
-.text2 {
-    margin-top: 10px;
-}
-
-.imageContainer {
-    background-color: #eed9c4;
-    width: 50%;
-    height: 89.5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.textContainer {
-    background-color: white;
-}
-
-.profilepic {
-    height: 500px;
-    border-radius: 30%;
-}
-
-.projectContainer {
-    text-align: center;
-}
-
-/* project page */
-.projectImg {
-    height: 280px;
-    border-radius: 20px;
-    margin-top: 20px;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-.project_container {
-    display: flex;
-    height: 100%;
-    width: 100%;
+    margin-bottom: 2rem;
     position: relative;
-    overflow: hidden;
 }
 
-.project_container .split {
-    width: 50%;
-    padding-top: 20px;
+h2::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: black;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
 }
+  
 
-.project_container .left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project_container .right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project_container .centered {
-    text-align: center;
-}
-
-.project_container img {
-    height: 280px;
-    margin-bottom: 35px;
-}
-
-#opposite {
-    background-color: white;
-}
-
-@media (max-width: 768px) {
-    .project_container {
-        flex-direction: column;
-    }
-    
-    .project_container .split {
-        width: 100%;
-    }
-}
-
-/* Resume page */
-.resume_container {
-    text-align: center;
-    margin-top: 50px;
-}
-
-#resume {
-    height: 800px;
-    border-radius: 20px;
-}
-
-#qual_container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 20px;
-    margin-top: 20px;
-}
-
-#qual_container ul {
-    list-style-position: inside;
-    padding-left: 20px;
-    text-align: left;
-}
-
-#qual_container li {
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.top-aligned {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 100%;
-    margin-top: 30px;
-}
-
-@media (max-width: 768px) {
-    .resume_container {
-        flex-direction: column;
-    }
-    
-    .resume_container .split {
-        width: 100%;
-    }
-}
-
-/* Contact Page */
-.contactContainer {
-    height: 90vh;
+/* Header Navigation */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     width: 100%;
-    background-color: #eed9c4;
 }
 
-.contactTitleContainer {
-    justify-content: center;
+.navbar-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
 }
 
-.contactTitle {
-    font-size: 40px;
-    font-style: italic;
-    margin-top: 30px;
+.navbar-brand .navbar-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
 }
 
-.myInfoImg {
+.navbar-links ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navbar-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-social i {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+
+/* About Section */
+#about-section {
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 3rem;
+    margin-top: 5rem;
+}
+
+#about-section h2 {
+    margin-bottom: 4rem;
+}
+
+#about-section .bio {
+    font-size: 18px;
+    max-width: 800px;
+    margin-top: 4rem;
+}
+
+#about-section .headshot {
+    width: 11rem !important;
+    height: 11rem !important;
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; 
+    padding: 0%;
+}
+
+#about-section img {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* Project Section */
+#project-section {
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+#project-section .project-container {
+    flex-direction: column;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); 
+    justify-items: center;
+}
+
+@media (max-width: 650px) {
+    #project-section .project-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+#project-section .project-card {
+    background-color: white;
+    border-radius: 10%;
+    width: 20rem;
+    height: 25rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+#project-section .project-card img {
+    height: 15rem;
+    width: 20rem;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+#project-section .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+#project-section .project-info .view-project {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* Skill Section */
+#skill-section {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+#skill-section .skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#skill-section i {
+    font-size: 4rem;
+    color: white;
+    margin: 1rem 0;
+}
+
+
+/* Contact Section */
+#contact-section {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+#contact-section .contact-icons {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.fa-envelope {
-    margin-top: 50px;
+#contact-section .fa-envelope {
     margin-left: -20px;
 
 }
 
-.fa-phone {
-    margin-top: 50px;
+#contact-section .fa-phone {
     margin-left: 200px;
-
 }
 
-.myInfo {
+#contact-section .contact-info {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-#phoneNum {
+#contact-section #phoneNum {
     margin-top: 10px;
     text-decoration: none;
     color: black;
 }
 
-#myemail {
+#contact-section #myemail {
     margin-left: 80px;
     margin-top: 10px;
     text-decoration: none;
     color: black;
 }
 
-.contactTextContainer {
+#contact-section .contactTextContainer {
     background-color: white;
-    height: 400px;
+    height: 450px;
     width: 500px;
     margin: 0 auto;
     margin-top: 30px;
     border-radius: 18px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.name, .email, .message {
-    margin-left: 20px;
-    margin-top: 18px;
+#contact-section .name, .email, .message {
+    margin-top: 15px;
     font-weight: bold;
 }
 
 
-.nameText, .emailText {
+#contact-section .nameText, .emailText {
     border: 2px solid gray;
     border-radius: 10px;
     height: 40px;
     width: 200px;
     margin-top: 10px;
-    margin-left: 13px;
 }
 
-
-#messageText {
+#contact-section #messageText {
     border: 2px solid gray;
     border-radius: 10px;
     margin-top: 10px;
-    margin-left: 13px;
     height: 125px;
     width: 200px;
     resize: none;
 }
 
-.submitButton {
+#contact-section .submitButton {
     margin-top: 10px;
-    margin-left: 103px;
+    width: 200px;
+    height: 30px;
 }
 
 .popup {
-    visibility: hidden;  /* Hide popup by default */
-    min-width: 150px;    /* Set a minimum width */
-    background-color: #333; /* Dark background */
-    color: #fff;         /* White text color */
+    visibility: hidden;  
+    min-width: 150px;  
+    background-color: #333; 
+    color: #fff;        
     text-align: center;
-    border-radius: 6px;  /* Rounded corners */
-    padding: 8px 0;      /* Padding */
-    position: fixed;     /* Fixed positioning */
-    z-index: 1;          /* Sit on top of other content */
-    left: 50%;           /* Center the popup horizontally */
-    bottom: 20px;        /* Position at the bottom */
-    transform: translateX(-50%); /* Center align the popup */
-    opacity: 0;          /* Start fully transparent */
-    transition: opacity 0.5s, visibility 0.5s; /* Transition for fading in/out */
+    border-radius: 6px; 
+    padding: 8px 0;     
+    position: fixed;     
+    z-index: 1;      
+    left: 50%;       
+    bottom: 20px;     
+    transform: translateX(-50%); 
+    opacity: 0;     
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: white;
+    font-size: 0.9rem;
 }

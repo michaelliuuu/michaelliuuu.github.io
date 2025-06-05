@@ -3,29 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <title>Home - My Portfolio</title>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <div id="header"></div>
     
     <main>
-        <div class="aboutContainer">
-            <div class="textContainer">
-                <div class="introduction">
-                    <p class="aboutMe">Howdy! I am a 3rd year Combined Major in Science (Computer Science, Physics, Earth and Environmenntal Sciences) student at the University of British Columbia.</p>
-                </div>
-                <div class="introExtra">
-                    <p class="text1">I changed my career as an Electrician to pursue my passion in programming. I love developing personal projects that automate tasks and simplify my daily routine.
-                        I am currently looking for a internship as a Software Engineer Intern.</p>
-                    <p class="text2">When I'm not working or studying, you can find me outdoors being active. I'm a big fan of exercising and playing various sports, as well as hiking and biking. 
-                        I also have a passion for photography, and I'm currently learning to play guitar.</p>
-                </div>
+        <!-- About Section -->
+        <div id="about-section">
+            <h2>Howdy! I'm Michael</h2>
+            <div class="headshot">
+                <img src="images/pp.jpg" alt="profile picture">
             </div>
-            <div class="imageContainer">
-                <img class="profilepic" src="images/pp.jpg" alt="profile picture">
+            <div class="bio">
+                <p>How's it going? My name is Michael and I am a Combined Major in Science: Computer Science, Physics, and Earth & Env. Sciences student at the University of British Columbia. 
+                    I pivoted my career as an Electrician to pursue my passion in programming. I love developing personal projects that automate tasks and simplify my daily routine.</p><br>
+                <p>Outside of academics and work, you can find me outdoors being active! I also have a passion for photography, and I'm currently learning to play guitar.</p>
             </div>
         </div>
+
+        <!-- Project Section -->
+        <div id="project-section">
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="images/PantryPal.png" alt="PantryPal" class="projectImg">
+                    <div class="project-info">
+                        <h3 class="project-title">PantryPal</h3>
+                        <p class="project-description">An AI-powered recipe generator that creates personalized meal ideas based on your ingredients.</p>
+                        <a href="https://github.com/michaelliuuu/PantryPal" class="view-project" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/BlockWatch.png" alt="BlockWatch" class="projectImg">
+                    <div class="project-info">
+                        <h3 class="project-title">BlockWatch</h3>
+                        <p class="project-description">Displays the optimal time to purchase crypto.</p>
+                        <a href="https://github.com/michaelliuuu/BlockWatch" class="view-project" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/divvy.png" alt="Divvy" class="projectImg">
+                    <div class="project-info">
+                        <h3 class="project-title">Divvy</h3>
+                        <p class="project-description">Split expenses with others easily.</p>
+                        <a href="https://github.com/michaelliuuu/DIVVY---cs50_project" class="view-project" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/Orderly.png" alt="Orderly" class="projectImg">
+                    <div class="project-info">
+                        <h3 class="project-title">Orderly</h3>
+                        <p class="project-description">A command-line application for managing customer orders in a restaurant setting.</p>
+                        <a href="https://github.com/michaelliuuu/Orderly---cs50p_project" class="view-project" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/BiblioTech.png" alt="BiblioTech" class="projectImg">
+                    <div class="project-info">
+                        <h3 class="project-title">BiblioTech</h3>
+                        <p class="project-description">A library management system for tracking books, patrons, and transactions.</p>
+                        <a href="https://github.com/michaelliuuu/BiblioTech" class="view-project" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div id="skill-section">
+            <h2>Skills</h2>
+            <div class="skill-container">
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-brands fa-python"></i>
+                <i class="devicon-cplusplus-plain"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css"></i>
+                <i class="fa-brands fa-node-js"></i>
+                <i class="fa-brands fa-php"></i>
+                <i class="fa-brands fa-git-alt"></i>
+                <i class="fa-brands fa-github-alt"></i>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact-section">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-icons">
+                    <i class="fas fa-envelope"></i> 
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-info">
+                    <a href="#" id="phoneNum">+1(778)-927-5568</a>
+                    <a href="#" id="myemail">michaelliuu1@gmail.com</a>
+                </div>
+                <div class="contactTextContainer">
+                    <form method="POST" action="https://formsubmit.co/michaelliu_98@outlook.com">
+                        <p class="name">Your Name</p>
+                        <input type="text" class="nameText" name="name" style="display: block;" maxlength="30">
+                        <p class="email">Email</p>
+                        <input type="text" class="emailText" name="email" style="display: block;" maxlength="30">
+                        <p class="message">Message</p>
+                        <textarea name="text" id="messageText" cols="30" rows="10"></textarea><br>
+                        <input type="submit" class="submitButton" value="Send"></button>
+                    </form>
+                </div>
+            </div>
+            <div id="popup" class="popup">Copied to clipboard!</div>
+        </div>
     </main>
+
+    <footer>
+        <p>© 2025 Michael Liu. All rights reserved.</p>
+    </footer>
 
     <script src="scripts.js"></script>
 </body>
